@@ -1,0 +1,33 @@
+Popular Javascript library we can use to improve our own project
+Ex of libraries : Bootstrap
+
+
+for(i=0; i < document.querySelectorAll("button").length; i++) {
+	document.querySelectorAll("button")[i].addEventListener("click", function(){
+		document.querySelector("h1").style.color = "red";
+});
+}
+For each button using for loop	//why use for loop? to add this behaviour to each button on webpage
+1) looks in entire document
+2) query all elements with button
+3) add event listener
+	event listener detects for click on button
+
+4) when detected
+	run callback function
+	4a) look through document
+	4b) query h1 selector in document
+	4c) change style.color of h1 to red
+__________________________________________________________________________________________________________________________
+Why Write so much code for simple behaviour task?
+
+How to solve this? write a library to do exactly same as this JS code
+
+$("button").click(function() {
+	$("h1").css("color", "red");
+})
+___________________________________________________________________________________________________________________________
+Ex of JQuery Impementation
+documentquerySelector("h1")   ---------->    jQuery("h1")----------> $("h1")
+//query for h1 selector		query for h1 selector	query for h1 selector
+makes JS code easy to read/debug/write

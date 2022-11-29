@@ -1,0 +1,51 @@
+How to manipulate CSS of element (say h1) using JQuery?
+
+How to add CSS in JS Directly usingJQuery?
+However we should not mix, keep JS only for behaviour and css for style and html for content
+
+1) Target element directly
+Set Property
+$("h1").css("color", "green")	//css method	//h1 is selected
+$("button");				//color property is changed to green
+
+
+
+/How is this method so flexible?
+Get Property
+console.log("h1").css("color")		//css method	//h1 is selected
+console.log("h1").css("font-size" )	//css method	//h1 is selected
+
+//
+O/p rgb(0,0,0)
+O/p 32px
+
+____________________________________________________________________________________
+2) Add CSS class to JS using JQuery
+Instead 
+ in styles.css
+1) Create class in css
+
+.big-title {
+	font-size: 10rem;
+	color: yellow;
+	font-family-cursive;
+}
+
+2)How to  Add that class using JQuery? use addClass method
+$("h1").addClass("big-title")
+
+$("button");
+______________________________________________________________________________________
+3How to remove css class from JQuery  (removeClass("classname"))
+
+$("h1").removeClass("big-title");
+_______________________________________________________________________________________
+4) How to add multiple classes?
+
+$("h1").addClass("big-title margin-50");	//separate by spaces
+________________________________________________________________________________________
+
+5) Check if element has class
+$("h1").hasClass("margin-50");
+true	
+

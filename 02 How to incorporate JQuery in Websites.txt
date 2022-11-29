@@ -1,0 +1,46 @@
+1) how to download JQuery?
+	
+	a) Download code from Website
+
+	b) CDN
+		Use Google CDN for JQuery
+		  why google CDN better? if user has been to other website with same CDN to fetch JQuery library
+			It will already be cached and saved in their browser
+			when user accessing your website, they dont have to fetch fresh copy of JQuery
+
+2) Create a new JQuery Project
+Link up css and js
+
+
+3) How to import JQuery using CDN ? (place above .js)  both on top or both at end of website body
+	//doesnt work if placed below why? browser reads top to bottom and processes 1) index.js ,2) tries to implement jQuery first from index.js
+	
+	What if Jquery and index.js are in <head>? doesnt work + no error given DISASTER
+
+5) How to perform quick check if jquery has been loaded?
+$(document).ready(function()){
+ $("h1").css("color","red");
+})
+
+4)Write JQuery to Change h1 color to red? Select h1 and and change css color to red
+
+index.html:
+!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <<link rel="stylesheet" href="/css/styles.css">>
+  </head>
+  <body>
+
+   <h1>Hello </h1>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+<script src ="index.js" charset="utf-8"></script>
+  </body>
+</html>
+
+index.js:
+$("h1").css("color", "red");
+

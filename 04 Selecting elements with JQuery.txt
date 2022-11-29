@@ -1,0 +1,23 @@
+JQuery has lots of methods:
+
+
+How to select elements with JQUery
+
+document.querySelector("h1");    =======>    $("h1");	//use Jquery method to select h1
+
+
+//can be specific also
+$("#header h1")	h1 nested inside a div with id "header"
+
+
+
+$("h1.title")	//h1 with with class as title
+
+
+//Multiple selection in JQuery
+//In JQuery no difference between selectong 1 vs many
+//How to query select all buttons using JQuery selector?
+//Normal						//JQuery
+$("h1");
+document.querySelectorAll("button");			$("button");		//No difference selecting 1 vs many
+

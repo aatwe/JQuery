@@ -1,0 +1,14 @@
+1) What if we open the CDN link in browser?
+	What is inside this JQuery CDN Code? JS Code
+	What is inside Bootstrap Code? CSS code
+
+	What is this code? minified version of JQuery library
+
+2) How to minify code? minify.com
+1539 byte -> 1113 byte
+//browser doesnt care about tab,spaces comments and ignores them anyway
+		so they remove it
+
+3) Where to find this code?
+download JQuery code -> dist ->jquery.js and jquery.min.js
+can customize and minify

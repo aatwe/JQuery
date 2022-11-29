@@ -1,0 +1,45 @@
+how to implement common animation with jquery?
+
+1) hide method
+$("button").on("click", function())) {
+	$("h1").hide(); 
+}
+
+2) show method
+$("button").on("click", function())) {
+	$("h1").show(); 
+}
+
+
+3) how to toggle (switch between hide and show)? .toggle method
+
+$("button").on("click", function(){
+	$("h1").toggle();
+	} 
+
+How to fadeout/fadein/fadetoggle(how to make sudden disappearence more progressive )? fadeout() and fadein()
+							(reduces opacity progressively/gradually)
+
+$("button").on("click", function(){
+    $("h1").fadeout();
+   })
+
+$("button").on("click", function(){
+    $("h1").fadein();
+   })
+
+$("button").on("click", function(){
+    $("h1").fadetoggle();
+   })
+__________________________________________________________________________________________________________________________________
+How to slideup() / slidedown/ collapse. when touse? drop down menu etc
+$("button").on("click", function(){
+    $("h1").slideUp();
+   })
+
+$("button").on("click", function(){
+    $("h1").slideDown();
+   })
+$("button").on("click", function(){
+    $("h1").slideToggle();
+   })

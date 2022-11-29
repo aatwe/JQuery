@@ -1,0 +1,21 @@
+how to use custom CSS animations? use dot animate() method
+WARNING: can only use css rules with numeric value, cannot specify color etc
+
+$("h1").animate(//your css rules come here)
+
+
+$("button").on("click", function(){
+  $("h1").animate({opacity: 0.5})
+})
+
+
+below wont work
+$("button").on("click", function(){
+  $("h1").animate({color: red})
+})
+
+
+how to nest naimations? performs in order
+$("button").on("click", function(){
+  $("h1").slideUp().slideDown().animate({opacity: 0.5});
+})

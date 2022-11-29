@@ -1,0 +1,86 @@
+ How to add event listeners to html element using jQuery
+
+
+__________________________________________________________________________________________________________________
+1) Add event listener(click) to h1 element
+__________________________________________________________________________________________________________________
+$("h1").click(function()){	//what click does? adds event listener and calls callbackfunction
+	
+
+Implement:
+Try clicking on h1 Hello in browser
+changes color to purple
+
+
+2)
+a) how to add event listener to all 5 buttons in index.html ? using for loop in index.js (Using JS)
+<button>Click Me </button>
+<button>Click Me </button>
+<button>Click Me </button>
+<button>Click Me </button>
+<button>Click Me </button>
+
+
+in Index.js
+Write for loop
+for(var i =0; i<5; i++){
+	document.querySelectorAll("button")[i].addEventListener("click", function()) {
+	document.querySelectorAll("h1").style.color = "purple";	//once click detected
+}
+}
+
+__________________________________________________________________________________________________________________
+b) How to add event listener to all 5 buttons using index.js? (Using JQuery)?
+							Directly, no for loop needed
+__________________________________________________________________________________________________________________
+In Index.js
+$("button").click(function(){
+	$("h1").css("color", "purple")'
+}
+
+
+__________________________________________________________________________________________________________________
+
+How to detect keystrokes inside a textbox using JQuery?target input element
+__________________________________________________________________________________________________________________
+
+//how to create a text box?
+<input type="text" name="" value="">
+
+//How to event listen input element
+$("input").keypress(function(event){
+	console.log(event.key);
+})	
+
+//Implement:
+Type anything in text box
+print it out in console
+
+__________________________________________________________________________________________________________________
+how to add event listener to entire document?
+__________________________________________________________________________________________________________________
+
+$("body").keypress(function(event){
+or
+
+$(document).keypress(function(event){
+
+
+__________________________________________________________________________________________________________________
+How to press a key and show inside h1? Select h1 and replace text
+__________________________________________________________________________________________________________________
+$("input").keypress(function(event){
+	$("h1").text(event.key);
+})	
+Implement
+Type anything, get shown up in h1
+
+__________________________________________________________________________________________________________________
+What are Alternative to keypress / click event listeners ? on method
+__________________________________________________________________________________________________________________
+$(document).on("//use any event")
+
+for ex //implements mouseover event
+$(document).on("mouseover", function(){
+ $("h1").css("color", "purple");
+})

@@ -1,0 +1,27 @@
+How to manipulate attributes in jQuery
+
+
+What are attributes? src, alt, etc
+ <img src="drum.png" alt="'>
+<a href="https://www.google.com"></a>
+
+1) How to get attribtues using jQuery .attr("attribute_name") 
+console.log($("img").attr("src"));
+
+
+2)How to set value of attributes using JQuery
+	which attribute to get  ,   set it to what
+console.log($("a").attr("href", "https:/www.yahoo.com"));
+	//Note this wont change the code will just redirect instead
+
+
+3) Is class also an html attribute?
+Yes
+How to print all classes linked to element?
+
+<h1 class="big-title margin-50">Hello</h1>
+
+>Console
+$("h1").attr('class");
+
+//O/p   big-title  margin-50

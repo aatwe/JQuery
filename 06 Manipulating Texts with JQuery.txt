@@ -1,0 +1,23 @@
+1) How to change text of element using JQuery
+$("h1").text("Bye");
+
+
+2)//if we have multiple buttons will it change for one or many?
+	Changes for all
+	$("button").text("Dont Click Me")	//Every button text gets updated
+
+
+
+3) How we updated text / add html earlier using Vanilla JS?
+	Using vanilla JS we used innerHTML
+
+$("button").innerHTML	
+
+    How to add html + text using JQuery?
+	$("button").html("<em>Hey</em>")
+
+
+4)What is magical about JQuery
+lots of methods in JQuery accessed using dot notation
+	these methods shorten code to write makes working with JS easy
+	No need to know all about JS to use JQuery(Magic)

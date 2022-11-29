@@ -1,0 +1,22 @@
+How to add element before other element? before method
+
+Why use these? to get a lot of control on where html elment should go
+
+$("h1").before("<button>New</button>");	/?Adds before h1 element opening tag
+
+
+
+$("h1").after("<button>New</button>");	/?Adds after h1 element closign tag
+
+
+
+$("h1").prepend("<button>New</button>");	/?Adds just before the content after opening tagf of h1
+
+
+
+$("h1").append("<button>New</button>");	/?Adds just after h1 content before closing tag
+
+___________________________________________________________________________________________________________________
+How to remove element before other element? before method? remove method
+
+$("button").remove();
